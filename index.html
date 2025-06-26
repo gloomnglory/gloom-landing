@@ -2,102 +2,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gloom n’ Glory</title>
-
-  <meta name="p:domain_verify" content="072bc7fb55379fd12727efb6d4768d41"/>
-
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1244737367287887');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1244737367287887&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Meta Pixel Code -->
-
-  <!-- Font Lokal -->
-  <style>
-    @font-face {
-      font-family: 'CloisterBlack';
-      src: url('CloisterBlack.ttf') format('truetype');
-    }
-
-    @font-face {
-      font-family: 'EngraversGothicBT';
-      src: url('engravers-gothic-bt-regular.ttf') format('truetype');
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: #fff;
-      font-family: 'EngraversGothicBT', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 100vh;
-    }
-
-    h1 {
-      font-family: 'CloisterBlack', cursive;
-      font-size: 3.5rem;
-      margin: 0;
-    }
-
-    p {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.9rem;
-      margin-top: 1rem;
-      color: #ccc;
-    }
-
-    a.cta-button {
-      margin-top: 2rem;
-      display: inline-block;
-      background: #fff;
-      color: #000;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      border-radius: 2px;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-
-    a.cta-button:hover {
-      background: #ddd;
-      color: #000;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Gloom n' Glory</title>
+    <!-- 👉 Replace XXXXX with your Pinterest claim code if you need domain verification -->
+    <meta name="p:domain_verify" content="072bc7fb55379fd12727efb6d4768d41"/>
+    <style>
+        @font-face {
+            font-family: 'Cloister Black';
+            src: url('fonts/CloisterBlack.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Engravers Gothic';
+            src: url('fonts/engravers-gothic-bt-regular.ttf') format('truetype');
+        }
+        body {
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Engravers Gothic', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Cloister Black', serif;
+            font-size: 3em;
+            margin-bottom: 0.3em;
+        }
+        p {
+            font-size: 0.9em;
+            letter-spacing: 0.1em;
+            margin-bottom: 2em;
+            text-transform: uppercase;
+        }
+        .button {
+            display: inline-block;
+            background-color: #fff;
+            color: #000;
+            padding: 0.7em 1.8em;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.85em;
+            border-radius: 2px;
+            margin: 0.5em;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ccc;
+        }
+        .button--ig {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .button--ig:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
-  <h1>Gloom n’ Glory</h1>
-  <p>Handcrafted Silver Forged in Shadow & Fire</p>
-  <a class="cta-button" 
-     href="https://www.etsy.com/shop/gloomnglorystudio?ref=shop_profile&listing_id=4310794260#items" 
-     target="_blank"
-     onclick="fbq('track', 'ViewContent')">
-     Shop on Etsy
-  </a>
+    <h1>Gloom n’ Glory</h1>
+    <p>Handcrafted Silver Forged in Shadow &amp; Fire</p>
+
+    <a class="button" href="https://www.etsy.com/shop/GloomnGlory" target="_blank" rel="noopener">Shop on Etsy</a>
+    <a class="button button--ig" href="https://www.instagram.com/gloomnglory" target="_blank" rel="noopener">Follow on Instagram</a>
 </body>
 </html>
-
-
-
