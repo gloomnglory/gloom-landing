@@ -44,7 +44,7 @@
       var r=document.getElementsByTagName("script")[0];
       r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
 
-      pintrk('load', '2618221353915'); // Ganti jika kamu punya Tag ID lain
+      pintrk('load', '2618221353915');
       pintrk('page');
     </script>
     <noscript>
@@ -115,7 +115,16 @@
     <h1>Gloom n’ Glory</h1>
     <p>Handcrafted Silver Forged in Shadow &amp; Fire</p>
 
-    <a class="button" href="https://gloomnglorystudio.etsy.com/?utm_source=netlify&utm_medium=landingpage&utm_campaign=netlify_click" target="_blank" rel="noopener">Shop on Etsy</a>
+    <a class="button" id="shop-button" href="https://gloomnglorystudio.etsy.com/?utm_source=netlify&utm_medium=landingpage&utm_campaign=netlify_click" target="_blank" rel="noopener">Shop on Etsy</a>
     <a class="button button--ig" href="https://www.instagram.com/gloomnglory" target="_blank" rel="noopener">Follow on Instagram</a>
+
+    <!-- Custom Event Tracking for Facebook -->
+    <script>
+      document.getElementById('shop-button').addEventListener('click', function() {
+        if (typeof fbq !== 'undefined') {
+          fbq('trackCustom', 'EtsyButtonClick');
+        }
+      });
+    </script>
 </body>
 </html>
