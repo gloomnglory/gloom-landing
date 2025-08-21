@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gloom n' Glory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQPRR8DZVK"></script>
@@ -82,20 +83,16 @@
     .button-container {
       display: flex;
       flex-direction: column;
-      align-items: center;   /* paksa tombol selalu center */
-      justify-content: center;
-      gap: 1.2em;            /* jarak antar tombol */
-      width: 100%;
-      max-width: 320px;      /* biar tidak terlalu lebar */
-      margin: 0 auto;
+      gap: 1.2em; /* jarak antar tombol lebih renggang */
+      width: 260px; /* tombol lebih lebar */
+      margin: 0 auto; /* center container */
     }
     .button {
       display: block;
       width: 100%;
-      max-width: 300px;      /* batas maksimal lebar tombol */
       background-color: #fff;
       color: #000;
-      padding: 1em 1.8em;
+      padding: 1em 1.8em; /* tombol lebih tinggi */
       text-decoration: none;
       font-weight: bold;
       font-size: 1em;
@@ -117,26 +114,25 @@
     }
 
     /* Responsif untuk layar kecil (HP) */
-@media (max-width: 600px) {
-  .logo {
-    max-width: 85%;       /* logo lebih besar */
-    margin-bottom: 2em;
-  }
-  p {
-    font-size: 1.2em;     /* tagline lebih besar */
-    line-height: 1.6em;
-    margin-bottom: 2.5em;
-  }
-  .button-container {
-    max-width: 95%;       /* tombol hampir penuh layar */
-    gap: 1.8em;
-  }
-  .button {
-    font-size: 1.2em;     /* teks tombol lebih besar */
-    padding: 1.3em 1.2em; /* tombol lebih tinggi */
-  }
-}
-
+    @media (max-width: 600px) {
+      .logo {
+        max-width: 100%;   /* logo full lebar layar */
+        margin-bottom: 2.5em;
+      }
+      p {
+        font-size: 1.5em;  /* tagline jauh lebih besar */
+        line-height: 1.8em;
+        margin-bottom: 2.5em;
+      }
+      .button-container {
+        width: 100%;       /* tombol full lebar */
+        gap: 2em;
+      }
+      .button {
+        font-size: 1.4em;   /* teks tombol lebih besar */
+        padding: 1.5em;     /* tombol lebih tinggi */
+      }
+    }
   </style>
 </head>
 <body>
