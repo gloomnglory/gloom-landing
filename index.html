@@ -2,157 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gloom n' Glory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQPRR8DZVK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ZQPRR8DZVK');
-  </script>
-
-  <!-- Meta tag verifikasi domain Pinterest -->
-  <meta name="p:domain_verify" content="072bc7fb55379fd12727efb6d4768d41"/>
-
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1244737367287887'); 
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1244737367287887&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Facebook Pixel Code -->
-
-  <!-- Pinterest Tag -->
-  <script>
-    !function(e){if(!window.pintrk){window.pintrk = function () {
-    window.pintrk.queue.push(Array.prototype.slice.call(arguments))};
-    var n=window.pintrk;n.queue=[],n.version="3.0";
-    var t=document.createElement("script");t.async=!0;t.src=e;
-    var r=document.getElementsByTagName("script")[0];
-    r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-
-    pintrk('load', '2618221353915');
-    pintrk('page');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none;" alt=""
-    src="https://ct.pinterest.com/v3/?event=init&tid=2618221353915&noscript=1" />
-  </noscript>
-  <!-- End Pinterest Tag -->
-
+  <title>Gloom n' Glory</title>
   <style>
     body {
-      margin: 0;
       background-color: #000;
       color: #fff;
-      font-family: 'Engravers Gothic', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 1em;
+      margin: 0;
+      padding: 0;
     }
+
     .logo {
-      max-width: 320px;
-      height: auto;
-      margin: 0 auto 1em auto; /* paksa selalu center */
+      margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      letter-spacing: 2px;
+      margin: 20px 0;
+    }
+
+    a.button {
       display: block;
-    }
-    p {
-      font-size: 1em;
-      letter-spacing: 0.1em;
-      margin-bottom: 2em;
-      text-transform: uppercase;
-    }
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2em; /* jarak antar tombol lebih renggang */
-      width: 260px; /* tombol lebih lebar */
-      margin: 0 auto; /* center container */
-    }
-    .button {
-      display: block;
-      width: 100%;
-      background-color: #fff;
-      color: #000;
-      padding: 1em 1.8em; /* tombol lebih tinggi */
-      text-decoration: none;
+      width: 90%;          /* jangan full, biar ada jarak */
+      max-width: 320px;    /* batas maksimal */
+      margin: 15px auto;   /* center */
+      padding: 14px 20px;  /* nyaman di klik */
+      font-size: 16px;     /* proporsional di HP */
+      border-radius: 8px;  /* sudut halus */
       font-weight: bold;
-      font-size: 1em;
-      border-radius: 2px;
-      transition: background 0.3s ease;
+      text-decoration: none;
       text-align: center;
+      transition: 0.3s;
     }
-    .button:hover {
-      background-color: #ccc;
-    }
-    .button--outline {
-      background-color: transparent;
-      color: #fff;
-      border: 2px solid #fff;
-    }
-    .button--outline:hover {
+
+    a.white {
       background-color: #fff;
       color: #000;
     }
 
-    /* Responsif untuk layar kecil (HP) */
-    @media (max-width: 600px) {
-      .logo {
-        max-width: 100%;   /* logo full lebar layar */
-        margin-bottom: 2.5em;
-      }
-      p {
-        font-size: 1.5em;  /* tagline jauh lebih besar */
-        line-height: 1.8em;
-        margin-bottom: 2.5em;
-      }
-      .button-container {
-        width: 100%;       /* tombol full lebar */
-        gap: 2em;
-      }
-      .button {
-        font-size: 1.4em;   /* teks tombol lebih besar */
-        padding: 1.5em;     /* tombol lebih tinggi */
-      }
+    a.black {
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+
+    a.button:hover {
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
-  <img src="pc logo.png" alt="Gloom n' Glory Logo" class="logo">
-  <p>Handcrafted Silver Forged in Shadow &amp; Fire</p>
 
-  <div class="button-container">
-    <a class="button" id="shop-button" href="https://gloomnglorystudio.etsy.com/?utm_source=netlify&utm_medium=landingpage&utm_campaign=netlify_click" target="_blank" rel="noopener">Shop on Etsy</a>
-    <a class="button button--outline" href="https://www.instagram.com/gloomnglory" target="_blank" rel="noopener">Instagram</a>
-    <a class="button button--outline" href="https://www.pinterest.com/gloomnglory" target="_blank" rel="noopener">Pinterest</a>
-    <a class="button button--outline" href="https://www.youtube.com/@gloomnglory" target="_blank" rel="noopener">YouTube</a>
+  <!-- Logo -->
+  <div class="logo">
+    <img src="LOGO-KAMU.png" alt="Gloom n' Glory Logo" width="220">
   </div>
 
-  <!-- Custom Event Tracking for Facebook -->
-  <script>
-    document.getElementById('shop-button').addEventListener('click', function() {
-      if (typeof fbq !== 'undefined') {
-        fbq('trackCustom', 'EtsyButtonClick');
-      }
-    });
-  </script>
-</body>
-</html>
+  <!-- Tagline -->
+  <h2>HANDCRAFTED SILVER<br>FORGED IN SHADOW & FIRE</h2>
+
+  <!-- Tombol -->
+  <a href="https://www.etsy.com/shop/..." class="button white">Shop on Etsy</a>
+  <a href="https://www.instagram.com/..." class="button
