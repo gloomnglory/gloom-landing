@@ -2,74 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gloom & Glory</title>
+  <title>Gloom n' Glory</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQPRR8DZVK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZQPRR8DZVK');
+  </script>
+
+  <!-- Meta tag verifikasi domain Pinterest -->
+  <meta name="p:domain_verify" content="072bc7fb55379fd12727efb6d4768d41"/>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1244737367287887'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1244737367287887&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Pinterest Tag -->
+  <script>
+    !function(e){if(!window.pintrk){window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments))};
+    var n=window.pintrk;n.queue=[],n.version="3.0";
+    var t=document.createElement("script");t.async=!0;t.src=e;
+    var r=document.getElementsByTagName("script")[0];
+    r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+
+    pintrk('load', '2618221353915');
+    pintrk('page');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+    src="https://ct.pinterest.com/v3/?event=init&tid=2618221353915&noscript=1" />
+  </noscript>
+  <!-- End Pinterest Tag -->
+
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: #111;
-      color: white;
-      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Engravers Gothic', sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
       text-align: center;
+      padding: 1em;
     }
-
-    /* LOGO */
     .logo {
-      max-width: 250px;  /* default */
-      width: 60%;
+      max-width: 320px;
       height: auto;
-      margin-bottom: 40px;
+      margin-bottom: 1em;
     }
-
-    /* BUTTON STYLE */
-    .btn {
+    p {
+      font-size: 1em;
+      letter-spacing: 0.1em;
+      margin-bottom: 2em;
+      text-transform: uppercase;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2em; /* jarak antar tombol lebih renggang */
+      width: 260px; /* tombol lebih lebar */
+    }
+    .button {
       display: block;
-      width: 260px;       /* lebih lebar */
-      padding: 16px 0;    /* lebih tinggi */
-      margin: 12px 0;     /* jarak antar tombol */
-      font-size: 18px;
-      border: none;
-      border-radius: 12px;
-      background: #fff;
-      color: #111;
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      padding: 1em 1.8em; /* tombol lebih tinggi */
       text-decoration: none;
       font-weight: bold;
-      transition: all 0.2s ease;
+      font-size: 1em;
+      border-radius: 2px;
+      transition: background 0.3s ease;
+      text-align: center;
+    }
+    .button:hover {
+      background-color: #ccc;
+    }
+    .button--outline {
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    .button--outline:hover {
+      background-color: #fff;
+      color: #000;
     }
 
-    .btn:hover {
-      background: #ccc;
-    }
-
-    /* RESPONSIVE UNTUK HP */
-    @media (max-width: 768px) {
+    /* Responsif untuk layar kecil (HP) */
+    @media (max-width: 600px) {
       .logo {
-        max-width: 320px; /* logo lebih besar di HP */
+        max-width: 70%; /* logo lebih besar relatif */
+        margin-bottom: 1.5em;
       }
-      .btn {
-        width: 85%;       /* biar fleksibel di layar kecil */
-        padding: 18px 0;  /* tombol makin tinggi */
-        font-size: 20px;  /* teks tombol lebih besar */
-        margin: 16px 0;   /* jarak tombol lebih renggang */
+      p {
+        font-size: 1.1em; /* tulisan lebih besar */
+        margin-bottom: 2em;
+      }
+      .button-container {
+        width: 85%; /* tombol hampir selebar layar */
+        gap: 1.5em; /* jarak lebih renggang */
+      }
+      .button {
+        font-size: 1.1em; /* teks tombol lebih besar */
+        padding: 1.2em; /* tombol lebih tinggi */
       }
     }
   </style>
 </head>
 <body>
+  <img src="pc logo.png" alt="Gloom n' Glory Logo" class="logo">
+  <p>Handcrafted Silver Forged in Shadow &amp; Fire</p>
 
-  <!-- LOGO -->
-  <img src="logo.png" alt="Gloom & Glory Logo" class="logo">
+  <div class="button-container">
+    <a class="button" id="shop-button" href="https://gloomnglorystudio.etsy.com/?utm_source=netlify&utm_medium=landingpage&utm_campaign=netlify_click" target="_blank" rel="noopener">Shop on Etsy</a>
+    <a class="button button--outline" href="https://www.instagram.com/gloomnglory" target="_blank" rel="noopener">Instagram</a>
+    <a class="button button--outline" href="https://www.pinterest.com/gloomnglory" target="_blank" rel="noopener">Pinterest</a>
+    <a class="button button--outline" href="https://www.youtube.com/@gloomnglory" target="_blank" rel="noopener">YouTube</a>
+  </div>
 
-  <!-- BUTTONS -->
-  <a href="https://etsy.com" class="btn">Shop Now</a>
-  <a href="https://instagram.com" class="btn">Follow Instagram</a>
-  <a href="https://facebook.com" class="btn">Visit Facebook</a>
-
+  <!-- Custom Event Tracking for Facebook -->
+  <script>
+    document.getElementById('shop-button').addEventListener('click', function() {
+      if (typeof fbq !== 'undefined') {
+        fbq('trackCustom', 'EtsyButtonClick');
+      }
+    });
+  </script>
 </body>
 </html>
