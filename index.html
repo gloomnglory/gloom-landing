@@ -54,14 +54,6 @@
     <!-- End Pinterest Tag -->
 
     <style>
-        @font-face {
-            font-family: 'Cloister Black';
-            src: url('fonts/CloisterBlack.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: 'Engravers Gothic';
-            src: url('fonts/engravers-gothic-bt-regular.ttf') format('truetype');
-        }
         body {
             margin: 0;
             background-color: #000;
@@ -74,10 +66,10 @@
             height: 100vh;
             text-align: center;
         }
-        h1 {
-            font-family: 'Cloister Black', serif;
-            font-size: 3em;
-            margin-bottom: 0.3em;
+        .logo {
+            max-width: 320px;
+            height: auto;
+            margin-bottom: 0.5em;
         }
         p {
             font-size: 0.9em;
@@ -85,38 +77,49 @@
             margin-bottom: 2em;
             text-transform: uppercase;
         }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
+            width: 220px; /* samakan ukuran button */
+        }
         .button {
-            display: inline-block;
+            display: block;
+            width: 100%;
             background-color: #fff;
             color: #000;
             padding: 0.7em 1.8em;
             text-decoration: none;
             font-weight: bold;
-            font-size: 0.85em;
+            font-size: 0.9em;
             border-radius: 2px;
-            margin: 0.5em;
             transition: background 0.3s ease;
+            text-align: center;
         }
         .button:hover {
             background-color: #ccc;
         }
-        .button--ig {
+        .button--outline {
             background-color: transparent;
             color: #fff;
             border: 2px solid #fff;
         }
-        .button--ig:hover {
+        .button--outline:hover {
             background-color: #fff;
             color: #000;
         }
     </style>
 </head>
 <body>
-    <h1>Gloom n’ Glory</h1>
+    <img src="pc logo.png" alt="Gloom n' Glory Logo" class="logo">
     <p>Handcrafted Silver Forged in Shadow &amp; Fire</p>
 
-    <a class="button" id="shop-button" href="https://gloomnglorystudio.etsy.com/?utm_source=netlify&utm_medium=landingpage&utm_campaign=netlify_click" target="_blank" rel="noopener">Shop on Etsy</a>
-    <a class="button button--ig" href="https://www.instagram.com/gloomnglory" target="_blank" rel="noopener">Follow on Instagram</a>
+    <div class="button-container">
+        <a class="button" id="shop-button" href="https://gloomnglorystudio.etsy.com/?utm_source=netlify&utm_medium=landingpage&utm_campaign=netlify_click" target="_blank" rel="noopener">Shop on Etsy</a>
+        <a class="button button--outline" href="https://www.instagram.com/gloomnglory" target="_blank" rel="noopener">Instagram</a>
+        <a class="button button--outline" href="https://www.pinterest.com/gloomnglory" target="_blank" rel="noopener">Pinterest</a>
+        <a class="button button--outline" href="https://www.youtube.com/@gloomnglory" target="_blank" rel="noopener">YouTube</a>
+    </div>
 
     <!-- Custom Event Tracking for Facebook -->
     <script>
